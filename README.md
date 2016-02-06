@@ -1,3 +1,3 @@
 # Lovebom.bz
 
-This is an experimental Hackday project to share "Digital hugs".
+This is an early prototype for an experimental Hackday project to share "Digital hugs".

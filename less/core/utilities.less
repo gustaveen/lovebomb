@@ -1,0 +1,98 @@
+.u-confine {
+    margin: 0 auto;
+    padding-left: @padding--s;
+    padding-right: @padding--s;
+
+    &--no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Use as a container for grid items
+.u-container {
+    width: 100%;
+
+    &--nowrap {
+        display: table;
+        height: 100%;
+    }
+}
+
+.u-flex {
+    display: flex;
+}
+
+.u-clearfix {
+    zoom: 1;
+
+    &:before {
+        content: '';
+        display: block;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.u-gutter-left-10 {
+    margin-left: 10px;
+}
+
+.u-gutter-right-10 {
+    margin-right: 10px;
+}
+
+@media @media--m {
+    .u-confine {
+        padding-left: @padding--m;
+        padding-right: @padding--m;
+
+        &--no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+@media @media--l {
+    .u-confine {
+        padding-left: @padding--l;
+        padding-right: @padding--l;
+
+        &--no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .u-gutter-left-10--l {
+        margin-left: 10px;
+    }
+
+    .u-gutter-right-10--l {
+        margin-right: 10px;
+    }
+}
+
+@media @media--xl {
+
+    .u-flex--xl {
+        display: flex;
+    }
+}
+
+@media @media--xxxl {
+    .u-confine {
+        padding-left: @padding--xl;
+        padding-right: @padding--xl;
+        max-width: @width--xxxl + @padding--xl * 2;
+
+        &--no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

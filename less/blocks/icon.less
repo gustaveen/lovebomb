@@ -1,0 +1,45 @@
+.icon {
+
+    &__emoji {
+        width: 80px;
+        height: 80px;
+        transform: scale(1.1);
+        animation: example 1.5s infinite;
+    }
+
+    &__heart {
+        position: absolute;
+        &:first-of-type {
+            top: 18%;
+            left: 17%;
+            animation-delay: 0.8s;
+        }
+        &:nth-of-type(2) {
+            bottom: 38%;
+            right: 19%;
+
+        }
+        &:nth-of-type(3) {
+            bottom: 19%;
+            left: 37%;
+            animation-delay: 0.4s;
+        }
+        &:nth-of-type(4) {
+            top: 30%;
+            right: 52%;
+            animation-delay: 1.2s;
+        }
+    }
+}
+
+@keyframes example {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}

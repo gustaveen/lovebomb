@@ -1,0 +1,40 @@
+.main {
+
+    &__container {
+        background-image: url(../img/hearts-rotation.gif);
+        background-size: cover;
+        background-position: top center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        &--start {
+            background: linear-gradient(135deg, rgba(255,174,39,1) 0%,rgba(222,73,109,1) 100%);
+        }
+    }
+
+    &__overlay {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(247,218,233,1);
+        background: linear-gradient(135deg, rgba(255,174,39,0.85) 0%,rgba(222,73,109,0.85) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7dae9', endColorstr='#d8278b', GradientType=0 );
+    }
+
+    &__logo {
+        position: relative;
+        top: 32%;
+        transform: translateY(-50%);
+        color: #fff;
+        letter-spacing: -0.04em;
+        text-align: center;
+        font-family: @font-karla;
+        font-weight: 700;
+        #m-font-size(12);
+
+    }
+}
